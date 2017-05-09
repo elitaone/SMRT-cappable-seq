@@ -1,2 +1,1 @@
-# BoYan
-Scripts using for analyzing SMRT-cappable-seq data
+# Scripts using for analyzing SMRT-cappable-seq data
