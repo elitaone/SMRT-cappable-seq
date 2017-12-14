@@ -1,9 +1,9 @@
 # Scripts used for analyzing SMRT-cappable-seq data
-Developped and maintained by Bo Yan (New England Biolabs). 
+Developed and maintained by Bo Yan (New England Biolabs).
 
 All python scripts are based on python 2.7.
 
-See details for each function in README.txt.
+See details and find examples for each function in README.txt.
 
 - ### pacbio_trim.py
 ```
@@ -28,16 +28,17 @@ The trimmed reads could be used for mapping using BlazR.
 ```
 Require bedtools
 Usage:
-python adjust_3end.py --input --output --refer --path
+python adjust_3end.py --information file.txt
 ```
 Description:
 
 This function adjusts the 3'end for the mapped reads in the bed file (converted from bam file), which removes the mapping due to the addition of polyA tail.
+--information: is a file containing all the information requried for this example. See README.txt for details.
 
 - ### TSS_analysis.py
 ```
 Usage:
-python TSS_analysis.py count --input inputbed --output count.output
+python TSS_analysis.py count --input input.bed --output count.output
 python TSS_analysis.py cluster --input count.output --output --control --cutoff (default5)
 ```
 Description:
@@ -54,7 +55,7 @@ R binomialtest.R --no-save input.bed output.bed 0.2 < binomialtest.R
 ```
 Description:
 
-This function performs the binomial test to determine the signicant accumulation (20% of reads) of reads at certain 3'ends.
+This function performs the binomial test to determine the signicant accumulation of reads at certain 3'ends, which is defined as termination site (TTS).
 
 
 
