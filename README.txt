@@ -1,7 +1,7 @@
 # This document explains all the scripts used for analyzing SMRT-Cappable-seq data 
 # Programs are developed and maintained by Bo Yan (New England Biolabs). 
 # All the scripts are developed based on Python 2.7.
-# Released in Jan, 2018
+# Modified on Feb 6, 2018
 
 ##################
 #----. Introduction
@@ -31,7 +31,7 @@ define and compare operon
 Requirement: python regex module installed.
 
 ## Usage:
-python pacbio_trim_startup.py length --input input.fastq (default)
+python pacbio_trim.py length --input input.fastq (default)
 python pacbio_trim.py length --input input.fasta --fa
 
 Description:
