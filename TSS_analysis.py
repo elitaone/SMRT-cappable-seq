@@ -8,6 +8,11 @@ Based on Python 2.7.
 Usage:
 python TSS_analysis.py count --input inputbed --output count.output
 python TSS_analysis.py cluster --input count.output --output --control --cutoff (default5)
+
+Note:
+Currently this script is only designed to count the reads mapped to only one genome, 
+in other words 'cut -f1 inputbed | sort -u | uniq -c' == 1
+
 """
 try: 
     from collections import deque
