@@ -10,7 +10,6 @@ Preinstall regex module
 try:
     import regex
     import string
-    import os
     import time
     import os
     import sys
