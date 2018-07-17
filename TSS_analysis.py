@@ -106,7 +106,7 @@ def countreads(input_bed, output_bed, i):
 def main_countreads(input_bed, output_bed):
     '''
     Use to count the number of reads at the same TSS(colum2 for +; column3 for -);
-    and the number of reads at the same TSS as well as 3'end(column3 for -; column2 for +). 
+    and the number of reads at the same TTS as well as 3'end(column3 for -; column2 for +). 
     '''
     print "============="
     localtime = time.asctime(time.localtime(time.time()))
