@@ -1,5 +1,6 @@
 # Scripts used for analyzing SMRT-cappable-seq data
 Developed and maintained by Bo Yan (New England Biolabs).
+Publication and citation: DOI: 10.1038/s41467-018-05997-6
 
 All python scripts are based on python 2.7.
 
